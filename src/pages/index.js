@@ -126,7 +126,7 @@ export default (() => {
 								<Text font="--base" margin="0 0 4px 0">
 									Номер сотового телефона
 								</Text>
-								<Input max-width="400px" width="100%" type="email" name="email" />
+								<Input max-width="400px" width="100%" type="tel" name="tel" />
 							</StackItem>
 							<StackItem width="100%">
 								<Override slot="StackItemContent" flex-direction="column" />
