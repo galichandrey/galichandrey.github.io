@@ -7,12 +7,14 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				«Школа-студия Галич»
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Индивидуальное обучение без отрыва от производства в удобном для вас графике по направлениям: маникюр, гель-лак, педикюр, наращивание ногтей, наращивание ресниц, оформление и окраска бровей"} />
+			<meta property={"og:title"} content={"«Школа-студия Галич»"} />
+			<meta property={"og:description"} content={"Индивидуальное обучение без отрыва от производства в удобном для вас графике по направлениям: маникюр, гель-лак, педикюр, наращивание ногтей, наращивание ресниц, оформление и окраска бровей"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section padding="64px 0" sm-padding="40px 0" font="--base" color="--dark">
+		<Section padding="64px 0 34px 0" sm-padding="40px 0" font="--base" color="--dark">
 			<Text
 				as="h1"
 				font="--headline1"
@@ -45,13 +47,10 @@ export default (() => {
 						top={0}
 					/>
 					<Text color="--grey" margin="0">
-						CEO
+						Директор
 					</Text>
 					<Text as="h3" font="--headline3" margin="5px 0 20px 0">
 						Марина Галич
-					</Text>
-					<Text as="p" margin="20px 0 5px 0">
-						This space is 100% editable. Use it to introduce a team member, describe their work experience and role within the company. This is also a great place to highlight a team member's strong sides.
 					</Text>
 				</StackItem>
 				<StackItem width="25%" lg-width="50%" sm-width="100%" sm-margin-top="24px">
@@ -63,9 +62,6 @@ export default (() => {
 					<Text as="h3" font="--headline3" margin="5px 0 20px 0">
 						David R. Lema
 					</Text>
-					<Text as="p" margin="20px 0 5px 0">
-						This space is 100% editable. Use it to introduce a team member, describe their work experience and role within the company. This is also a great place to highlight a team member's strong sides.
-					</Text>
 				</StackItem>
 				<StackItem width="25%" lg-width="50%" sm-width="100%" sm-margin-top="24px">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -75,9 +71,6 @@ export default (() => {
 					</Text>
 					<Text as="h3" font="--headline3" margin="5px 0 20px 0">
 						Janet E. Morey
-					</Text>
-					<Text as="p" margin="20px 0 5px 0">
-						This space is 100% editable. Use it to introduce a team member, describe their work experience and role within the company. This is also a great place to highlight a team member's strong sides.
 					</Text>
 				</StackItem>
 				<StackItem width="25%" lg-width="50%" sm-width="100%" sm-margin-top="24px">
@@ -91,13 +84,10 @@ export default (() => {
 						Claire R. Peery
 						<br />
 					</Text>
-					<Text as="p" margin="20px 0 5px 0">
-						This space is 100% editable. Use it to introduce a team member, describe their work experience and role within the company. This is also a great place to highlight a team member's strong sides.
-					</Text>
 				</StackItem>
 			</Stack>
 		</Section>
-		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="+7906954999">
+		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="+7906954999" margin="0px 0px 20px 0px">
 			<Override slot="link" />
 		</SocialMedia>
 		<Section background-color="--dark" text-align="center" padding="32px 0">
