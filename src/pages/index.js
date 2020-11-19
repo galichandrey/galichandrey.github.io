@@ -17,31 +17,38 @@ export default (() => {
 				as="h1"
 				font="--headline1"
 				md-font="--headline2"
-				max-width="520px"
+				max-width="900px"
 				margin="0 auto 5px auto"
 				text-align="center"
+				width="900px"
 			>
-				We are cute
+				«Школа-студия Галич»
 			</Text>
 			<Text
 				as="p"
 				color="--grey"
-				max-width="520px"
+				max-width="700px"
 				margin="0 auto"
 				text-align="center"
 				font="--lead"
 			>
-				The smartest people work every day to provide the best service and to make our clients happy
+				Индивидуальное обучение без отрыва от производства в удобном для вас графике по направлениям: маникюр, гель-лак, педикюр, наращивание ногтей, наращивание ресниц, оформление и окраска бровей{"\n\n"}
 			</Text>
 			<Stack margin-top="40px">
 				<StackItem width="25%" lg-width="50%" sm-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
-					<Box height="0" margin="0 0 20px 0" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80) 50% 0/cover no-repeat" />
+					<Box
+						height="0"
+						margin="0 0 20px 0"
+						padding-bottom="100%"
+						background="url(https://uploads.quarkly.io/5fb6745ab1c8af001eb5555e/images/DIf-LZypLVI.jpg?v=2020-11-19T15:01:09.913Z) 50% 0/cover no-repeat"
+						top={0}
+					/>
 					<Text color="--grey" margin="0">
 						CEO
 					</Text>
 					<Text as="h3" font="--headline3" margin="5px 0 20px 0">
-						Nathan K. Joe
+						Марина Галич
 					</Text>
 					<Text as="p" margin="20px 0 5px 0">
 						This space is 100% editable. Use it to introduce a team member, describe their work experience and role within the company. This is also a great place to highlight a team member's strong sides.
@@ -90,9 +97,20 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
-		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio">
+		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="+7906954999">
 			<Override slot="link" />
 		</SocialMedia>
+		<Section background-color="--dark" text-align="center" padding="32px 0">
+			<Link
+				href="mailto:hello@company.com"
+				text-decoration-line="none"
+				variant="--base"
+				color="--grey"
+				hover-color="--primary"
+			>
+				«Школа-студия Галич» (с) +7 906 954 3999
+			</Link>
+		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
