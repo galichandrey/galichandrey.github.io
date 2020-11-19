@@ -87,7 +87,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
-		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="https://wa.me/+7906954999" margin="0px 0px 20px 0px">
+		<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="https://api.whatsapp.com/send?phone=79069543999" margin="0px 0px 20px 0px">
 			<Override slot="link" />
 		</SocialMedia>
 		<Section background-color="--dark" text-align="center" padding="32px 0">
