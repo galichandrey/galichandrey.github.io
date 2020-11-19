@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Section, Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Section, Override, StackItem, Stack, SocialMedia, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -89,11 +89,66 @@ export default (() => {
 					</Text>
 				</StackItem>
 			</Stack>
-			<SocialMedia facebook="https://www.facebook.com/galichschool.studio" instagram="https://www.instagram.com/galichschool.studio" whatsapp="https://api.whatsapp.com/send?phone=79069543999" margin="0px 0px 10px 0px">
+			<SocialMedia
+				facebook="https://www.facebook.com/galichschool.studio"
+				instagram="https://www.instagram.com/galichschool.studio"
+				whatsapp="https://api.whatsapp.com/send?phone=79069543999"
+				margin="0px 0px 10px 0px"
+				display="none"
+			>
 				<Override slot="link" />
 			</SocialMedia>
 		</Section>
+		<Section background="--color-light" color="--dark" padding="64px 0">
+			<Stack>
+				<StackItem width="50%" lg-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text font="--headline2" max-width="500px" margin="10px 0 0 0">
+						Запись
+						<br />
+						на собеседование
+						<br />
+						в форме справа
+					</Text>
+				</StackItem>
+				<StackItem width="50%" lg-width="100%">
+					<Formspree>
+						<Stack gap="16px">
+							<StackItem width="50%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Name
+								</Text>
+								<Input max-width="400px" width="100%" name="name" />
+							</StackItem>
+							<StackItem width="50%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Email
+								</Text>
+								<Input max-width="400px" width="100%" type="email" name="email" />
+							</StackItem>
+							<StackItem width="100%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Message
+								</Text>
+								<Input as="textarea" rows="4" width="100%" name="message" />
+							</StackItem>
+							<StackItem width="100%">
+								<Button>
+									Send
+								</Button>
+							</StackItem>
+						</Stack>
+					</Formspree>
+				</StackItem>
+			</Stack>
+		</Section>
 		<Section background-color="--dark" text-align="center" padding="32px 0">
+			<SocialMedia whatsapp="https://api.whatsapp.com/send?phone=79069543999" margin="0px 0px 10px 0px">
+				<Override slot="link" />
+			</SocialMedia>
 			<Link
 				href="mailto:hello@company.com"
 				text-decoration-line="none"
