@@ -112,12 +112,12 @@ export default (() => {
 					</Text>
 				</StackItem>
 				<StackItem width="50%" lg-width="100%">
-					<Formspree>
+					<Formspree endpoint="https://formspree.io/f/xzbkvoql">
 						<Stack gap="16px">
 							<StackItem width="50%">
 								<Override slot="StackItemContent" flex-direction="column" />
 								<Text font="--base" margin="0 0 4px 0">
-									Name
+									Имя
 								</Text>
 								<Input max-width="400px" width="100%" name="name" />
 							</StackItem>
@@ -131,7 +131,7 @@ export default (() => {
 							<StackItem width="100%">
 								<Override slot="StackItemContent" flex-direction="column" />
 								<Text font="--base" margin="0 0 4px 0">
-									Message
+									Сообщение
 								</Text>
 								<Input as="textarea" rows="4" width="100%" name="message" />
 							</StackItem>
