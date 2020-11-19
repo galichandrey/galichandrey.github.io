@@ -101,9 +101,9 @@ export default (() => {
 		</Section>
 		<Section background="--color-light" color="--dark" padding="64px 0">
 			<Stack>
-				<StackItem width="50%" lg-width="100%">
-					<Override slot="StackItemContent" flex-direction="column" />
-					<Text font="--headline2" max-width="500px" margin="10px 0 0 0">
+				<StackItem width="40%" lg-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" width="400px" />
+					<Text font="--headline2" margin="10px 0 0 0" width="100%">
 						Запись
 						<br />
 						на собеседование
@@ -111,7 +111,7 @@ export default (() => {
 						в форме справа
 					</Text>
 				</StackItem>
-				<StackItem width="50%" lg-width="100%">
+				<StackItem width="60%" lg-width="100%">
 					<Formspree endpoint="https://formspree.io/f/xzbkvoql">
 						<Stack gap="16px">
 							<StackItem width="50%">
@@ -124,20 +124,20 @@ export default (() => {
 							<StackItem width="50%">
 								<Override slot="StackItemContent" flex-direction="column" />
 								<Text font="--base" margin="0 0 4px 0">
-									Email
+									Номер сотового телефона
 								</Text>
 								<Input max-width="400px" width="100%" type="email" name="email" />
 							</StackItem>
 							<StackItem width="100%">
 								<Override slot="StackItemContent" flex-direction="column" />
 								<Text font="--base" margin="0 0 4px 0">
-									Сообщение
+									На каком курсе хотите обучаться?
 								</Text>
 								<Input as="textarea" rows="4" width="100%" name="message" />
 							</StackItem>
 							<StackItem width="100%">
 								<Button>
-									Send
+									Оставить заявку
 								</Button>
 							</StackItem>
 						</Stack>
