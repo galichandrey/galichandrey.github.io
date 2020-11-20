@@ -46,7 +46,7 @@ export default (() => {
 								width="150px"
 								height="150px"
 								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fb6745ab1c8af001eb5555e/images/DIf-LZypLVI.jpg?v=2020-11-19T15:01:09.913Z) 50% 0/cover no-repeat"
+								background="url(https://uploads.quarkly.io/5fb6745ab1c8af001eb5555e/images/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8.jpg?v=2020-11-20T02:05:22.525Z) 50% 0/cover no-repeat"
 								border-radius="50%"
 							/>
 							<Text as="h3" font="normal 500 24px/1.2 --fontFamily-sans" margin="20px 0 5px 0">
@@ -77,15 +77,13 @@ export default (() => {
 					/>
 					<Text
 						as="h2"
-						font="normal 700 30px/1.2 --fontFamily-sans"
+						font="normal 600 30px/1.2 --fontFamily-sans"
 						md-font="--headline3"
 						margin="0 0 0 10px"
 						width="100%"
 						min-width="100%"
 					>
-						«Индивидуальное и групповое обучение маникюру, гель-лаку, педикюру, наращиванию ногтей, наращиванию ресниц, оформлению и окраске бровей.
-						<br />
-						Без отрыва от производства в удобном для вас графике - день и время выбираете вы»
+						«Индивидуальное и групповое обучение маникюру, гель-лаку, педикюру, наращиванию ногтей, наращиванию ресниц, оформлению и окраске бровей, а также современным педагогическим технологиям и методикам преподавания спецдисциплин  в индустрии моды и красоты. Обучение проходит без отрыва от производства в удобном для вас графике - день и время выбираете вы»
 					</Text>
 				</StackItem>
 			</Stack>
@@ -103,12 +101,10 @@ export default (() => {
 			<Stack>
 				<StackItem width="40%" lg-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" width="400px" />
-					<Text font="--headline2" margin="10px 0 0 0" width="100%">
-						Запись
+					<Text font="normal 900 40px/1.2 --fontFamily-sans" margin="10px 0 0 0" width="100%" min-width="100%">
+						Запись на курсы
 						<br />
-						на собеседование
-						<br />
-						в форме справа
+						в форме справа 👉
 					</Text>
 				</StackItem>
 				<StackItem width="60%" lg-width="100%">
@@ -150,11 +146,12 @@ export default (() => {
 				<Override slot="link" />
 			</SocialMedia>
 			<Link
-				href="mailto:hello@company.com"
 				text-decoration-line="none"
 				variant="--base"
 				color="--grey"
 				hover-color="--primary"
+				target="_blank"
+				href="https://api.whatsapp.com/send?phone=79069543999"
 			>
 				«Школа-студия Галич» (с) +7 906 954 3999
 			</Link>
